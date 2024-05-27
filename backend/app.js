@@ -12,12 +12,12 @@ app.use(bodyParser.json());
 
 // Nodemailer transporter setup
 const transporter = nodemailer.createTransport({
-  host: "mail.armt.ng", // Use your email service provider
+  host: "mail.armt.ng",
   port: 465,
   secure: true,
   auth: {
-    user: "contact@armt.ng", // Your email address
-    pass: "abujaRMT#123#", // Your email password or app-specific password
+    user: "contact@armt.ng",
+    pass: "abujaRMT#123#",
   },
 });
 const generateEmailHTML = (data) => {
@@ -93,7 +93,7 @@ app.post("/api/contact", (req, res) => {
 
   const mailOptions = {
     from: "contact@armt.ng",
-    to: "contact@armt.ng", // Your email address to receive messages
+    to: "contact@armt.ng",
     subject: `New Feedback from ${name}`,
     html: generateEmailHTML({ name, email, phone, feedback, comment }),
   };

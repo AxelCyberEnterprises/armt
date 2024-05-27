@@ -4,10 +4,6 @@ import React from "react";
 import Image from "next/image";
 import aboutBg from "../../../public/image.png";
 import videoBg from "../../../public/image.svg";
-// import cloudinary from "cloudinary-video-player";
-// Also possible:
-// import { videoPlayer } from 'cloudinary-video-player';
-// import "cloudinary-video-player/cld-video-player.min.css";
 import { IoIosCheckmark } from "react-icons/io";
 import Carousel from "@/components/Carousel";
 
