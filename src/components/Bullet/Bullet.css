@@ -1,0 +1,18 @@
+.bullet__container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+
+}
+.bullet__container > img {
+  width: 14px;
+  height: 14px;
+}
+.bullet__container > p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  text-align: left;
+  color: rgba(45, 48, 57, 1);
+}

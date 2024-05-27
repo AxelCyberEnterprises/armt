@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap');
+
+
+.top-nav {
+  display: flex;
+  width: 100%;
+  background: rgba(45, 48, 57, 1);
+  justify-content: center;
+}
+.header__container {
+  display:flex;
+  width: 90%;
+  marign-inline: auto;
+  justify-content: space-between;
+  align-items: center;  
+}
+.header__container > img {
+  align-items: center;
+  display: flex;
+  /* flex-grow: 1; */
+}
+.header__container-links {
+  display: flex;
+  width: 650px;
+  justify-content:space-between;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.83px;
+  text-align: left;
+
+}
+.header__container-search {
+  display: flex;
+  background: #FFFFFF;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+  /* width: 152px; */
+}
+.header__container-search > img  {
+  margin-left: 16px;
+}
+.header__container-search > input {
+  padding: 12px 0px;
+}
+.header-link {
+  color: rgba(255, 255, 255, 1);
+}
+.header-link.active{
+  color : #149145
+}
+
+.none ,
+.hamburger-img{
+  display: none;
+}
+.active{
+  color: rgba(20, 145, 69, 1);
+}
+@media screen and (max-width: 1024px) {
+  .header__container {
+    width: 95%;
+  }
+  .header__container-links {
+    width: 600px;
+  }
+  .header__container-search > input {
+    padding: 8px 0;
+  }
+  .header__container-search > img  {
+    margin-left: 10px;
+  }
+
+}
+@media screen and (max-width: 850px) {
+  .top-nav {
+    flex-direction: column;
+  }
+  .header__container {
+    margin: 20px;
+    padding: 0 10px 0 0;
+  }
+  .hamburger-img{
+    display: flex;
+  }
+  .header__container-links {
+    width: 500px;
+    font-size: 12px;
+  }  .header__container-search > input {
+    padding: 1px 0;
+  }
+  .header__container-search > img  {
+    margin-left: 10px;
+  }
+  .header__container-links {
+    display: none;
+  }
+  .header__container-search {
+    display: none;
+  }
+  .header__links-responsive {
+    display: flex;
+    justify-content: center;
+    gap: 37px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .header__container-search-2 {
+    display: flex;
+    background: #FFFFFF;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+    /* width: 152px; */
+  }
+  .header__container-search-2 > img  {
+    margin-left: 16px;
+  }
+  .header__container-search-2 > input {
+    padding: 12px 0px;
+  }
+  .none {
+    display: none;
+  }
+}
