@@ -6,10 +6,10 @@ import React, { useState } from "react";
 import ActiveLink from "../ActiveLink";
 import Link from "next/link";
 
-function Header() {
+function Header({activeLink}) {
   const [toggle, setToggle] = useState(false);
 
-  const [activeTab, setActiveTab] = useState("/");
+  const [activeTab, setActiveTab] = useState(activeLink);
 
   const toggleNav = () => {
     setToggle(!toggle);

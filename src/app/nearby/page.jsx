@@ -7,7 +7,7 @@ function page() {
   return (
     <div className="nearby__container">
       <div className="nearby__container-header">
-        <Header />
+        <Header  activeLink={"/nearby"}/>
       </div>
       <div className="nearby__container-topic" >
         <p>Nearby</p>

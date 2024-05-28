@@ -7,13 +7,15 @@ export default function page() {
   return (
     <>
       <div>
-        <Header />
+        <Header activeLink={"/live-arrivals"}/>
       </div>
       <main className="live-arrival-container">
         <section className="mt-8 sm:mt-12">
-          <p className="text-center mb-6 sm:mb-12 py-3 sm:p-4 sm:w-[450px] bg-[#2D3039] text-white text-3xl sm:text-4xl">
+          <div className='mb-6 sm:mb-12'>
+          <p className="inline text-center p-3 sm:p-4  bg-[#2D3039] text-white text-3xl sm:text-4xl">
             Stations & Bus stops
           </p>
+          </div>
           <div className="mb-10 sm:mb-12 sm:w-[350px] p-3 sm:p-4 bg-[#EEEEEE] text-[#727272]">
             <p className="mb-2 sm:mb-4 text-base">Search</p>
             <div className="flex sm:inline-flex gap-1.5">

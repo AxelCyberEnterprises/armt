@@ -8,7 +8,7 @@ function page() {
   return (
     <div className="terms__container">
       <div className="terms__container-header">
-        <Header />
+        <Header activeLink={"/terms-of-use"} />
       </div>
 
       <div className="terms__container-topic">
