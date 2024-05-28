@@ -7,12 +7,14 @@ export default function page() {
   return (
     <>
       <div>
-        <Header />
+        <Header activeLink={"/status-updates"} />
       </div>
       <main className="status-update-container mt-8 sm:mt-12">
-        <p className="mb-4 sm:mb-8 p-3 sm:p-4 sm:w-[450px] bg-[#2D3039] text-white text-3xl sm:text-4xl">
+        <div className="mb-5 sm:mb-10">
+        <p className="inline p-3 sm:p-4 bg-[#2D3039] text-white text-3xl sm:text-4xl">
           Status updates
         </p>
+        </div>
         <div className="bg-[#eeeeee] px-3 sm:px-6 pb-4">
           <div className="mb-4 flex gap-6">
             <p className="text-sm py-2 text-[#2d3039]">Trains and buses</p>

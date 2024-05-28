@@ -49,7 +49,7 @@ export default function ContactPage() {
   return (
     <>
       <div>
-        <Header />
+        <Header activeLink={"/feedback"} />
       </div>
       <main className="flex justify-center feedback-container">
         <div className="flex flex-col items-center w-[32rem] max-x-[90%]">

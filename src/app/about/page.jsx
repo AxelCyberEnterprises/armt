@@ -11,7 +11,7 @@ export default function page() {
   return (
     <>
       <div>
-        <Header />
+        <Header activeLink={"/about"} />
       </div>
       <div className="relative mb-6 sm:mb-10">
         <p className="inline absolute p-2 sm:p-3 left-[5%] top-8 text-2xl sm:text-3xl sm:top-12 text-white bg-[#2d3039]">

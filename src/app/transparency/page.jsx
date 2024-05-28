@@ -8,7 +8,7 @@ function page() {
   return (
     <div className="transparency__container">
       <div className="transparency__container-header">
-        <Header />
+        <Header activeLink={"/transparency"} />
       </div>
       <div className="transparency__container-topic">
         <p>Transparency</p>

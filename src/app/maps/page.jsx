@@ -8,7 +8,7 @@ function page() {
   return (
     <div className="maps-container">
       <div className="maps__container-header">
-        <Header />
+        <Header activeLink={"/maps"} />
       </div>
       <div className="maps__container-topic">
         <h2>Maps</h2>

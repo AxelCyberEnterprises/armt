@@ -8,7 +8,7 @@ function page(props) {
   return (
     <div className="privacy__container">
       <div className="privacy__container-header">
-        <Header />
+        <Header activeLink={"/privacy-policy"} />
       </div>
       <div className="privacy__container-body">
         <div className="privacy__container-body_topic">
