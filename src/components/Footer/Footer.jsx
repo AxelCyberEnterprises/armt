@@ -13,16 +13,16 @@ function Footer() {
       <div className="footer__container-column col-lg-8">
         <h2>Help & Contacts</h2>
         <div className="footer__container-column_links">
-          <Link href="about" className="footer__container-links">
+          <Link href="/about" className="footer__container-links">
             About
           </Link>
           <p>Careers</p>
           <p>Publications & reports</p>
-          <Link href="safety" className="footer__container-links">
+          <Link href="/safety" className="footer__container-links">
             Safety & Security
           </Link>
 
-          <Link href="transparency" className="footer__container-links">
+          <Link href="/transparency" className="footer__container-links">
             Transparency
           </Link>
         </div>

@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import ActiveLink from "../ActiveLink";
 import Link from "next/link";
 
-function Header({activeLink}) {
+function Header({ activeLink }) {
   const [toggle, setToggle] = useState(false);
 
   const [activeTab, setActiveTab] = useState(activeLink);
@@ -68,6 +68,13 @@ function Header({activeLink}) {
             setActiveTab={setActiveTab}
           >
             Maps
+          </ActiveLink>
+          <ActiveLink
+            href={"/fares"}
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          >
+            Fares
           </ActiveLink>
           <ActiveLink
             href={"/help-and-contact"}
