@@ -1,0 +1,102 @@
+.careers__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.careers__container-header {
+  width: 100%;
+}
+.careers__container-hero {
+  display: flex;
+  width: 100%;
+  position: relative;
+  background: url("/career-hero.png") ;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+.careers__container-hero_text {
+  display:flex;
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  background: rgba(45, 48, 57, 1);
+  width: 180px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 58.59px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  padding: 12px 20px;
+}
+.careers__container-section2 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-top: 100px;
+  margin-inline: auto;
+}
+.careers__container-section2 > h4 {
+  font-family: 'DM Sans',sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  width:100%;
+  line-height: 20.83px;
+  text-align: center;
+  color: rgba(20, 144, 69, 1);
+}
+.careers__container-section2 > h2{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 39.06px;
+  text-align: center;
+  color: rgba(45, 48, 57, 1);
+}
+.careers__container-section2 > p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  text-align: center;
+  color: rgba(45, 48, 57, 1);
+}
+.careers__container-section3 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 25px;
+}
+.careers__container-section3 > p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 39.06px;
+  text-align: left;
+  color: rgba(45, 48, 57, 1);
+}
+.careers__container-section3_list {
+  margin-top: 25px;
+}
+.careers__container-section4 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 30px;
+  gap: 35px;
+}
+.careers__container-footer {
+  margin-top: 90px;
+}
+@media screen and (max-width: 768px) {
+  .careers__container-hero_text {
+    top: 25px;
+    left: 28px;
+  }
+
+}
