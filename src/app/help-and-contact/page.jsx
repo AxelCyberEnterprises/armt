@@ -7,11 +7,11 @@ export default function page() {
   return (
     <>
       <div>
-        <Header />
+        <Header activeLink={"/help-and-contact"}/>
       </div>
       <main className="help-and-contact-container ">
-        <div className="mt-8 sm:mt-12">
-          <p className="mb-6 sm:mb-12 py-3 sm:p-4 sm:w-[450px] bg-[#2D3039] text-white text-3xl sm:text-4xl">
+        <div className="mt-8 sm:mt-12 mb-6 sm:mb-12 ">
+          <p className="inline text-center p-3 sm:p-4  bg-[#2D3039] text-white text-3xl sm:text-4xl">
             Help & contacts
           </p>
         </div>

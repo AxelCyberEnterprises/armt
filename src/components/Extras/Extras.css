@@ -19,7 +19,7 @@
   line-height: 30px;
   text-align: left;
   color: rgba(18, 18, 18, 1);
-  max-width: 250px;
+  /* max-width: 250px; */
 }
 .extras__container-left > p {
   font-family: 'DM Sans', sans-serif;

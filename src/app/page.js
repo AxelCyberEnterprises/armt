@@ -10,7 +10,7 @@ function page() {
   return (
     <div className="landing__container">
       <div className="landing__container-header">
-        <Header />
+        <Header  activeLink={"/"}/>
       </div>
       <div className="landing__container-section1">
         <div className="landing__container-section1_left">
