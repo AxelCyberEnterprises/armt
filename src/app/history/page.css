@@ -1,0 +1,121 @@
+.history__container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.history__container-header {
+  width: 100%;
+}
+.history__container-hero {
+  /* border: 2px solid red; */
+  display: flex;
+  width: 100%;
+  background: url("/history-hero.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
+  margin-bottom: 25px;
+}
+.history__container-hero_text {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: rgba(45, 48, 57, 1);
+  width: 300px;
+  padding: 12px 20px;
+}
+.history__container-hero_text > p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 58.59px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.history__container-body {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-inline: auto;
+  gap: 25px;
+}
+.history__container-body_section1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap:15px;
+}
+.history__container-body_section1 > h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+.history__container-body_section1 > p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.history__container-footer{
+  margin-top: 100px;
+  display: flex;
+}
+@media screen and (max-width: 1250px) {
+  .history__container-hero {    
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .history__container-hero {    
+    height: 230px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .history__container-hero {    
+    height: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .history__container-hero {    
+    height: 180px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .history__container-hero {    
+    height: 150px;
+  }
+  .history__container-hero_text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    padding: 10px 15px;
+  }
+  .history__container-hero_text > p {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.46px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .history__container-hero {
+    height: 100px;
+    margin-bottom: 2px;
+  }
+  .history__container-hero_text {
+    width: 150px;
+  }
+  .history__container-hero_text > p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30.46px;
+    padding: 0px;
+  }
+}
