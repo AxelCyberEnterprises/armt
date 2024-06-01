@@ -1,4 +1,5 @@
 import Extras from '@/components/Extras/Extras'
+import Footer from '@/components/Footer/Footer'
 import Header from '@/components/header/Header'
 import React from 'react'
 import "./page.css"
