@@ -44,16 +44,8 @@
 
 // export default Page;
 
-
-
-
-
-
-
-
 // // import React from "react"
 // // import "./page.css"
-
 
 // // async function fetchCategories() {
 // //   const options = {
@@ -71,13 +63,11 @@
 // //   }
 // // }
 
-
-
 // // export default async function Page() {
 // //   const categories = await fetchCategories();
 // //   console.log(categories)
 // //   // const blogs = await fetchBlogs();
-  
+
 // //   return (
 
 // //     <div>

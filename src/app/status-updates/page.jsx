@@ -5,7 +5,7 @@ import Header from "@/components/header/Header";
 import React, { useState, useEffect } from "react";
 import { FaAngleRight } from "react-icons/fa6";
 
-export default function page() {
+export default function Page() {
   const [currentTime, setCurrentTime] = useState(new Date());
 
   useEffect(() => {
@@ -13,7 +13,7 @@ export default function page() {
       setCurrentTime(new Date());
     }, 1000);
 
-    return () => clearInterval(timer); // Cleanup the interval on component unmount
+    return () => clearInterval(timer);
   }, []);
 
   const formatTime = (date) => {
@@ -21,7 +21,7 @@ export default function page() {
     const minutes = date.getMinutes();
     const ampm = hours >= 12 ? "PM" : "AM";
     hours = hours % 12;
-    hours = hours ? hours : 12; // the hour '0' should be '12'
+    hours = hours ? hours : 12;
     const strMinutes = minutes < 10 ? "0" + minutes : minutes;
     return `${hours}:${strMinutes} ${ampm}`;
   };
