@@ -1,9 +1,31 @@
+"use client";
+
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/header/Header";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaAngleRight } from "react-icons/fa6";
 
 export default function page() {
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer); // Cleanup the interval on component unmount
+  }, []);
+
+  const formatTime = (date) => {
+    let hours = date.getHours();
+    const minutes = date.getMinutes();
+    const ampm = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    const strMinutes = minutes < 10 ? "0" + minutes : minutes;
+    return `${hours}:${strMinutes} ${ampm}`;
+  };
+
   return (
     <>
       <div>
@@ -11,9 +33,9 @@ export default function page() {
       </div>
       <main className="status-update-container mt-8 sm:mt-12">
         <div className="mb-5 sm:mb-10">
-        <p className="inline p-3 sm:p-4 bg-[#2D3039] text-white text-3xl sm:text-4xl">
-          Status updates
-        </p>
+          <p className="inline p-3 sm:p-4 bg-[#2D3039] text-white text-3xl sm:text-4xl">
+            Status updates
+          </p>
         </div>
         <div className="bg-[#eeeeee] px-3 sm:px-6 pb-4">
           <div className="mb-4 flex gap-6">
@@ -27,13 +49,13 @@ export default function page() {
           </div>
           <div className="flex bg-white">
             <p className="flex-1 py-4 border-r-[1px] border-[#eeeeee] flex justify-center items-center text-sm sm:text-base text-[#2d3039]">
-              Now 11:29AM
+              Now {formatTime(currentTime)}
             </p>
             <p className="flex-1 py-4 border-r-[1px] border-[#eeeeee] flex justify-center items-center text-sm sm:text-base text-[#2d3039]">
               This weekend
             </p>
             <p className="flex-1 py-4 flex justify-center items-center text-sm sm:text-base text-[#2d3039]">
-              Futere date
+              Future date
             </p>
           </div>
         </div>

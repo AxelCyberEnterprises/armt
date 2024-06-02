@@ -69,13 +69,13 @@ function Header({ activeLink }) {
           >
             Maps
           </ActiveLink>
-          <ActiveLink
+          {/* <ActiveLink
             href={"/fares"}
             activeTab={activeTab}
             setActiveTab={setActiveTab}
           >
             Fares
-          </ActiveLink>
+          </ActiveLink> */}
           <ActiveLink
             href={"/help-and-contact"}
             activeTab={activeTab}
@@ -140,6 +140,13 @@ function Header({ activeLink }) {
         >
           Maps
         </ActiveLink>
+        {/* <ActiveLink
+          href={"/fares"}
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+        >
+          Fares
+        </ActiveLink> */}
         <ActiveLink
           href={"/help-and-contact"}
           activeTab={activeTab}

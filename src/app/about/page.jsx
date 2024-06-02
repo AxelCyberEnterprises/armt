@@ -84,7 +84,7 @@ export default function page() {
           <div className="py-4 px-2 flex-3  grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <p className="mb-2 font-semibold text-xl text-[#2d3039]">
-                Imporved investment Environment
+                Improved investment Environment
               </p>
               <p className="text-sm text-[#2d3039]">
                 By providing reliable and efficient transfortation, the ARMT
@@ -159,7 +159,7 @@ export default function page() {
                 Innovative Amenities and Technology
               </p>
               <p className="text-sm text-[#2d3039]">
-                we prioritize a seamless, stress-free travel experience from the
+                We prioritize a seamless, stress-free travel experience from the
                 moment you enter our station until you reach your destination
               </p>
             </div>
