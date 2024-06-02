@@ -66,10 +66,10 @@ function page() {
       <div className="landing__container-section2">
         <div className="landing__container-section2_column">
           <div className="landing__container-column_header-text">
-            <h2>Trains and Buses</h2>
+            <h2>Lines</h2>
           </div>
           <div className="landing__container-column_color-container">
-            <div className="landing__container-color_block">
+            {/* <div className="landing__container-color_block">
               <div className="color-block_left dark-green">
                 <p>Abuja Metro</p>
               </div>
@@ -87,9 +87,9 @@ function page() {
                 <p>Minor delays</p>
                 <img src="/arrow.png" alt="" width={20} height={20} />
               </div>
-            </div>
+            </div> */}
 
-            <div className="landing__container-color_block">
+            {/* <div className="landing__container-color_block">
               <div className="color-block_left aqua">
                 <p>Kukwaba I</p>
               </div>
@@ -125,37 +125,10 @@ function page() {
                 <p>Good Service</p>
                 <img src="/arrow.png" alt="" width={20} height={20} />
               </div>
-            </div>
+            </div> */}
             <div className="landing__container-color_block">
-              <div className="color-block_left indigo">
-                <p>Bassanjiwa</p>
-              </div>
-              <div className="color-block_right">
-                <p>Good Service</p>
-                <img src="/arrow.png" alt="" width={20} height={20} />
-              </div>
-            </div>
-            <div className="landing__container-color_block">
-              <div className="color-block_left orange">
-                <p>Airport</p>
-              </div>
-              <div className="color-block_right">
-                <p>Good Service</p>
-                <img src="/arrow.png" alt="" width={20} height={20} />
-              </div>
-            </div>
-            <div className="landing__container-color_block">
-              <div className="color-block_left light-green">
-                <p>GwaGwa</p>
-              </div>
-              <div className="color-block_right">
-                <p>Good Service</p>
-                <img src="/arrow.png" alt="" width={20} height={20} />
-              </div>
-            </div>
-            <div className="landing__container-color_block">
-              <div className="color-block_left yellow">
-                <p>DeiDei</p>
+              <div className="color-block_left navy">
+                <p>Line 1</p>
               </div>
               <div className="color-block_right">
                 <p>Good Service</p>
@@ -164,7 +137,16 @@ function page() {
             </div>
             <div className="landing__container-color_block">
               <div className="color-block_left red">
-                <p>Kagini</p>
+                <p>Line 2</p>
+              </div>
+              <div className="color-block_right">
+                <p>Good Service</p>
+                <img src="/arrow.png" alt="" width={20} height={20} />
+              </div>
+            </div>
+            <div className="landing__container-color_block">
+              <div className="color-block_left yellow">
+                <p>Line 3</p>
               </div>
               <div className="color-block_right">
                 <p>Good Service</p>
@@ -173,7 +155,25 @@ function page() {
             </div>
             <div className="landing__container-color_block">
               <div className="color-block_left light-brown">
-                <p>Gbazango</p>
+                <p>Line 4</p>
+              </div>
+              <div className="color-block_right">
+                <p>Good Service</p>
+                <img src="/arrow.png" alt="" width={20} height={20} />
+              </div>
+            </div>
+            <div className="landing__container-color_block">
+              <div className="color-block_left black">
+                <p>Line 5</p>
+              </div>
+              <div className="color-block_right">
+                <p>Good Service</p>
+                <img src="/arrow.png" alt="" width={20} height={20} />
+              </div>
+            </div>
+            <div className="landing__container-color_block">
+              <div className="color-block_left aqua">
+                <p>Line 6</p>
               </div>
               <div className="color-block_right">
                 <p>Good Service</p>
@@ -220,13 +220,13 @@ function page() {
                 extrasBody="Get deals and offers on things to do
                 in Abuja on off-peak Fridays"
               />
-              {/* <Extras
+              <Extras
                 extrasHead="Southbond Blackwall
                 Tunnel closure this 
                 weekend"
                 extrasBody="Tunnel closed southbound from
                 00:01 Sat 18 to 05:00 Mon 20 May"
-              /> */}
+              />
               <Extras
                 extrasHead="Train disruption"
                 extrasBody="Continued disruption during repairs"
