@@ -66,20 +66,15 @@ function Header({ activeLink }) {
           >
             Status updates
           </ActiveLink>
-          
-          <ActiveLink
-          </ActiveLink>
-          
 
-          <ActiveLink
-
+          {/* <ActiveLink
             href={"/help-and-contact"}
             activeTab={activeTab}
             setActiveTab={setActiveTab}
           >
             Help & Contact
           </ActiveLink> */}
-          <div className="header__container-links_more" onClick={toggleMore}> 
+          <div className="header__container-links_more" onClick={toggleMore}>
             <p>More</p>
             <img src="/arrow3.png" alt="" />
           </div>
@@ -98,10 +93,16 @@ function Header({ activeLink }) {
         </div>
       </div>
 
-      <div  className={toggle2 ? "header-more": "none"}>
-        <Link className="more-link" href="/carrers">Careers</Link>
-        <Link className="more-link" href="/maps">Maps</Link>
-        <Link className="more-link" href="/help-and-contact">Help & Contact</Link>
+      <div className={toggle2 ? "header-more" : "none"}>
+        <Link className="more-link" href="/careers">
+          Careers
+        </Link>
+        <Link className="more-link" href="/maps">
+          Maps
+        </Link>
+        <Link className="more-link" href="/help-and-contact">
+          Help & Contact
+        </Link>
       </div>
       <div className={toggle ? "header__links-responsive" : "none"}>
         <ActiveLink
