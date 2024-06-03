@@ -66,21 +66,13 @@ function Header({ activeLink }) {
           >
             Status updates
           </ActiveLink>
-          {/* <ActiveLink
-            href={"/maps"}
-            activeTab={activeTab}
-            setActiveTab={setActiveTab}
-          >
-            Maps
-          </ActiveLink> */}
+          
           <ActiveLink
-            href={"/fares"}
-            activeTab={activeTab}
-            setActiveTab={setActiveTab}
-          >
-            Fares
           </ActiveLink>
-          {/* <ActiveLink
+          
+
+          <ActiveLink
+
             href={"/help-and-contact"}
             activeTab={activeTab}
             setActiveTab={setActiveTab}
@@ -154,6 +146,13 @@ function Header({ activeLink }) {
         >
           Maps
         </ActiveLink>
+        {/* <ActiveLink
+          href={"/fares"}
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+        >
+          Fares
+        </ActiveLink> */}
         <ActiveLink
           href={"/help-and-contact"}
           activeTab={activeTab}
