@@ -9,7 +9,9 @@ export default function page() {
   return (
     <>
         <div>
-            <Header />
+            <Header 
+                activeLink={"/fares"}
+            />
         </div>
         <main className='fares-container'>
             <section className="mt-8 sm:mt-12">
