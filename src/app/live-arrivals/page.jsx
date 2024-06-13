@@ -9,7 +9,7 @@ export default function page() {
       <div>
         <Header activeLink={"/live-arrivals"}/>
       </div>
-      <main className="live-arrival-container">
+      <main className="live-arrival-container bg-white">
         <section className="mt-8 sm:mt-12">
           <div className='mb-6 sm:mb-12'>
           <p className="inline text-center p-3 sm:p-4  bg-[#2D3039] text-white text-3xl sm:text-4xl">
