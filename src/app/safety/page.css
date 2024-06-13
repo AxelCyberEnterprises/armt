@@ -1,6 +1,7 @@
 .safety__container {
   display: flex;
   flex-direction: column;
+  background: white;
   width: 100%;
 }
 .safety__container-header {

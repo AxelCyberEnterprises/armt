@@ -1,6 +1,7 @@
 .landing__container {
   display: flex;
   flex-direction: column;
+  background: white;
   width: 100%;
 }
 .landing__container-section1 {

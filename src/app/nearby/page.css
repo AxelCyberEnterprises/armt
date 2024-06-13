@@ -1,6 +1,7 @@
 .nearby__container {
   display: flex;
   flex-direction: column;
+  background:white;
   width: 100%;
 }
 .nearby__container-header {

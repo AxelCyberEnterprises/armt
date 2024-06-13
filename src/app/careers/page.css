@@ -1,6 +1,7 @@
 .careers__container {
   display: flex;
   flex-direction: column;
+  background: white;
   width: 100%;
 }
 .careers__container-header {

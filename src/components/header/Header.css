@@ -2,6 +2,7 @@
 
 
 .top-nav {
+  background: white;
   display: flex;
   width: 100%;
   background: rgba(45, 48, 57, 1);
@@ -80,8 +81,10 @@
 }
 .header__container-search > img  {
   margin-left: 16px;
+  background: inherit;
 }
 .header__container-search > input {
+  background: inherit;
   padding: 12px 0px;
 }
 .header-link {
