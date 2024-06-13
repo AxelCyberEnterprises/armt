@@ -13,16 +13,18 @@ function Footer() {
       <div className="footer__container-column col-lg-8">
         <h2>Help & Contacts</h2>
         <div className="footer__container-column_links">
-          <Link href="/about" className="footer__container-links">
+          <Link href={"/about"} className="footer__container-links">
             About
           </Link>
-          <p>Careers</p>
+          <Link href={"/careers"} className="footer__container-links">
+            Careers
+          </Link>
           <p>Publications & reports</p>
-          <Link href="/safety" className="footer__container-links">
+          <Link href={"/safety"} className="footer__container-links">
             Safety & Security
           </Link>
 
-          <Link href="/transparency" className="footer__container-links">
+          <Link href={"/transparency"} className="footer__container-links">
             Transparency
           </Link>
         </div>
@@ -40,13 +42,13 @@ function Footer() {
       <div className="footer__container-column">
         <h2>Other pages</h2>
         <div className="footer__container-column_links">
-          <Link href="/privacy-policy" className="footer__container-links">
+          <Link href={"/privacy-policy"} className="footer__container-links">
             Privacy policy
           </Link>
-          <Link href="/terms-of-use" className="footer__container-links">
+          <Link href={"/terms-of-use"} className="footer__container-links">
             Terms of use
           </Link>
-          <Link href="/" className="footer__container-links">
+          <Link href={"/"} className="footer__container-links">
             FAQ
           </Link>
         </div>
