@@ -135,3 +135,6 @@ div.event-time > ul > li{
 div.event-time > ul > li > a{
   @apply text-[#149145] text-base underline;
 }
+body{
+  background-color: #FFFFFF;
+}
