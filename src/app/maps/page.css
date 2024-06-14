@@ -1,6 +1,7 @@
 .maps-container {
   display: flex;
   flex-direction: column;
+  background: white;
   width:100%;
 }
 .maps__container-header{

@@ -1,6 +1,7 @@
 .privacy__container {
   display: flex;
   flex-direction: column;
+  background: white;
   width: 100%;
 }
 .privacy__container-header {

@@ -1,6 +1,7 @@
 .careers__container {
   display: flex;
   flex-direction: column;
+  background: white;
   width: 100%;
 }
 .careers__container-header {
@@ -14,7 +15,8 @@
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
-  min-height: 80vh;
+  min-height: 70vh;
+  /* border: 2px solid red; */
 }
 .careers__container-hero_text {
   display:flex;
@@ -93,10 +95,32 @@
 .careers__container-footer {
   margin-top: 90px;
 }
+@media screen and (max-width: 1200px) {
+  .careers__container-hero {
+    min-height: 50vh;
+  }
+}
+@media screen and (max-width: 950px) {
+  .careers__container-hero {
+    min-height: 40vh;
+  }
+  
+  .careers__container-section2 {
+   margin-top: 50px; 
+  }
+}
 @media screen and (max-width: 768px) {
   .careers__container-hero_text {
     top: 25px;
     left: 28px;
   }
+  .careers__container-hero {
+    min-height: 30vh;
+  }
 
+}
+@media screen and (max-width: 600px) {
+  .careers__container-hero {
+    min-height: 25vh;
+  }
 }
