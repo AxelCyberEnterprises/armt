@@ -18,7 +18,7 @@
 }
 main.live-arrival-container, main.feedback-container, main.help-and-contact-container,
 main.status-update-container, main.about-container,
-main.fares-container{
+main.fares-container, main.schedules-container{
   padding: 0 5%;
   background-color:#FFFFFF;
 }
@@ -134,4 +134,7 @@ div.event-time > ul > li{
 
 div.event-time > ul > li > a{
   @apply text-[#149145] text-base underline;
+}
+body{
+  background-color: #FFFFFF;
 }
