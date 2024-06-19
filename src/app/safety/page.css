@@ -39,9 +39,10 @@
 .safety__container-left_top {
   width: 100%;
   display: flex;
-  background: url("/big-rail.jpeg");
+  background: url("/safety-hero.png");
   background-size: cover; /* Adjusts the size of the image to cover the entire container */
   background-position: center;
+  cursor: pointer;
   background-repeat: no-repeat;
   height: 40vh;
   position: relative;
@@ -57,7 +58,7 @@
   color: rgba(255, 255, 255, 1);
   padding: 24px;
   gap: 20px;
-  border-bottom: 3px solid rgba(220, 36, 31, 1);
+  border-bottom: 3px solid rgba(20, 144, 69, 1);
 }
 .safety-extras__container-left {
   display: flex;

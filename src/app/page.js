@@ -216,21 +216,15 @@ function page() {
             />
             <div className="extras-container">
               <Extras
-                extrasHead="Let’s do Fridays"
-                extrasBody="Get deals and offers on things to do
-                in Abuja on off-peak Fridays"
+                extrasHead="Safe travels & Free rides"
+                extrasBody="Enjoy safe travels and free rides with the
+                Abuja Rail Mass Transit network."
               />
               <Extras
-                extrasHead="Southbond Blackwall
-                Tunnel closure this 
-                weekend"
-                extrasBody="Tunnel closed southbound from
-                00:01 Sat 18 to 05:00 Mon 20 May"
+                extrasHead="Lines 1 and 3 fully operational"
+                extrasBody="The ARMT lines 1 and 3 are ready to go."
               />
-              <Extras
-                extrasHead="Train disruption"
-                extrasBody="Continued disruption during repairs"
-              />
+              
             </div>
           </div>
         </div>
@@ -241,14 +235,14 @@ function page() {
               <img src="/cowry.png" alt="" />
               <p>Top up cowry</p>
             </div>
-            <div className="arrival-box2">
+            {/* <div className="arrival-box2">
               <img src="/caution.png" alt="" />
               <p>Congestion charge</p>
-            </div>
+            </div> */}
           </div>
           <div className="landing__container-extras">
             <img
-              src="/engineer.png"
+              src="/ARMT 1.png"
               alt="Description of the image"
               width={400}
               height={200}
