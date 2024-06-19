@@ -135,6 +135,12 @@ div.event-time > ul > li{
 div.event-time > ul > li > a{
   @apply text-[#149145] text-base underline;
 }
+
+.date:hover{
+  border-bottom: 1px;
+  border-color: #149145;
+  transition: all ease-in-out 0.5ms;
+}
 body{
   background-color: #FFFFFF;
 }
