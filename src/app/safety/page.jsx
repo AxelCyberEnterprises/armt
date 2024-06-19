@@ -33,7 +33,7 @@ function page() {
 
           <div className="safety__container-left_bottom">
             <div className="safety__container-extras">
-              <img src="/evacuation.png" alt="" />
+              <img src="/group.png" alt="" />
               <Extras
                 extrasHead="Emergency evacuation"
                 extrasBody="Find out what to do in a the unlikely event of an emergency on the Train"

@@ -36,7 +36,7 @@
 .maps__container-section1_train {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 700px;
 }
 .maps__container-section1_train> img {
   display:flex;

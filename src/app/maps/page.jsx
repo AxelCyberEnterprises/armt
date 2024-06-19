@@ -1,4 +1,5 @@
 import Extras from '@/components/Extras/Extras'
+import Extras2 from '@/components/Extras2/Extras2'
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/header/Header'
 import React from 'react'
@@ -15,21 +16,22 @@ function page() {
       </div>
       <div className="maps__container-section1">
         <div className="maps__container-section1_train">
-          <img src="/train-img.png" alt="" />
-          <Extras 
+          <img src="/group.png" alt="" />
+          <Extras2 
             extrasHead="Train maps"
             extrasBody="Maps and guides available to help you get around, 
             available to view."
           />
+          
         </div>
 
-        <div className="maps__container-section1_train">
+        {/* <div className="maps__container-section1_train">
           <img src="/bus-img.png" alt="" />
           <Extras
             extrasHead="Bus maps"
             extrasBody="Bus maps available for you to view"
           />
-        </div>
+        </div> */}
       </div>
 
       <div className="maps__container-section2">
