@@ -1,5 +1,5 @@
 "use client";
-
+import { FaCalendar } from "react-icons/fa";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/header/Header";
 import React, { useState, useEffect } from "react";
@@ -32,7 +32,7 @@ export default function Page() {
         <Header activeLink={"/status-updates"} />
       </div>
       <main className="status-update-container mt-8 sm:mt-12">
-        <div className="mb-5 sm:mb-10">
+        <div className="mb-5 sm:mb-10 hover:opacity-80 transition duration-500 ease-in-out">
           <p className="inline p-3 sm:p-4 bg-[#2D3039] text-white text-3xl sm:text-4xl">
             Status updates
           </p>
@@ -47,15 +47,16 @@ export default function Page() {
               <p className="px-2 text-[#149145]">Buses</p>
             </div>
           </div>
-          <div className="flex bg-white">
-            <p className="flex-1 py-4 border-r-[1px] border-[#eeeeee] flex justify-center items-center text-sm sm:text-base text-[#2d3039]">
+          <div className="flex flex-col sm:flex-row bg-white divide-x-[2px] divide-[#e1e1e1] transition duration-500 ease-in-out hover:divide-[#149145] hover:divide-x-0">
+            <p className="hover:border-b-[2px] hover:border-[#149145]  transition duration-500 ease-in-out flex-1 py-4 flex justify-center items-center text-sm sm:text-base text-[#2d3039]">
               Now {formatTime(currentTime)}
             </p>
-            <p className="flex-1 py-4 border-r-[1px] border-[#eeeeee] flex justify-center items-center text-sm sm:text-base text-[#2d3039]">
+            <p className="hover:border-b-[2px] hover:border-[#149145] transition duration-500 ease-in-out flex-1 py-4 border-r-[1px] border-[#eeeeee] flex justify-center items-center text-sm sm:text-base text-[#2d3039]">
               This weekend
             </p>
-            <p className="flex-1 py-4 flex justify-center items-center text-sm sm:text-base text-[#2d3039]">
+            <p className="hover:border-b-[2px] hover:border-[#149145] transition duration-500 ease-in-out relative flex-1 py-4 flex justify-center items-center text-sm sm:text-base text-[#2d3039]">
               Future date
+              <FaCalendar  className="absolute text-[#149145] right-4 top-[50%] -translate-y-[50%]"/>
             </p>
           </div>
         </div>
@@ -69,41 +70,73 @@ export default function Page() {
           <div className="sm:flex-[2]">
             <div className="border-[1px] border-[#eeeeee]">
               <div className="flex">
-                <div className="flex-1 bg-[#2d3039] p-4 text-base text-white">
-                  <p className="flex justi">Stadium station</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base flex justify-between items-center bg-[#faf5e1]">
-                  <p className="text-[#2d3039]">Minor delays</p>
-                  <FaAngleRight style={{ color: "#149145" }} />
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-1 bg-[#894e24] p-4 text-base text-white">
-                  <p>Wupa</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base flex justify-between items-center bg-[#faf5e1]">
-                  <p className="text-[#2d3039]">Severe delays</p>
-                  <FaAngleRight style={{ color: "#149145" }} />
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-1 bg-[#149145] p-4 text-base text-white">
+                <div className="flex-1 bg-[#fffff] p-4 text-base text-[#2d3039]">
                   <p>Abuja Metro</p>
                 </div>
+                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base flex justify-between items-center bg-[#faf5e1]">
+                  <p className="text-[#149145]">Minor delays</p>
+                  <FaAngleRight style={{ color: "#149145" }} />
+                </div>
+              </div>
+              <div className="flex">
+                <div className="flex-1 bg-[#eeeeee] p-4 text-base text-[#2d3039]">
+                  <p>Stadium station</p>
+                </div>
+                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base flex justify-between items-center bg-[#faf5e1]">
+                  <p className="text-[#149145]">Severe delays</p>
+                  <FaAngleRight style={{ color: "#149145" }} />
+                </div>
+              </div>
+              <div className="flex">
+                <div className="flex-1 bg-[#ffffff] p-4 text-base text-[#2d3039]">
+                  <p>Kukwaba I</p>
+                </div>
                 <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
                   <p>Good service</p>
                 </div>
               </div>
               <div className="flex">
-                <div className="flex-1 bg-[#dc241f] p-4 text-base text-white">
-                  <p>Kagini</p>
+                <div className="flex-1 bg-[#eeeeee] p-4 text-base text-[#2d3039]">
+                  <p>Kukwaba II</p>
                 </div>
                 <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
                   <p>Good service</p>
                 </div>
               </div>
               <div className="flex">
-                <div className="flex-1 bg-[#66cc00] p-4 text-base text-white">
+                <div className="flex-1 bg-[#ffffff] p-4 text-base text-[#2d3039]">
+                  <p>Wupa</p>
+                </div>
+                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
+                  <p>Good service</p>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="flex-1 bg-[#eeeeee] p-4 text-base text-[#2d3039]">
+                  <p>Idu</p>
+                </div>
+                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
+                  <p>Good service</p>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="flex-1 bg-[#ffffff] p-4 text-base text-[#2d3039]">
+                  <p>Bassanjiwa</p>
+                </div>
+                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
+                  <p>Good service</p>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="flex-1 bg-[#eeeeee] p-4 text-base text-[#2d3039]">
+                  <p>Airport</p>
+                </div>
+                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
+                  <p>Good service</p>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="flex-1 bg-[#ffffff] p-4 text-base text-[#2d3039]">
                   <p>GwaGwa</p>
                 </div>
                 <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
@@ -111,8 +144,24 @@ export default function Page() {
                 </div>
               </div>
               <div className="flex">
-                <div className="flex-1 bg-[#5a5eb7] p-4 text-base text-white">
-                  <p>Idu</p>
+                <div className="flex-1 bg-[#ffffff] p-4 text-base text-[#2d3039]">
+                  <p>DeiDei</p>
+                </div>
+                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
+                  <p>Good service</p>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="flex-1 bg-[#ffffff] p-4 text-base text-[#2d3039]">
+                  <p>Kagini</p>
+                </div>
+                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
+                  <p>Good service</p>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="flex-1 bg-[#eeeeee] p-4 text-base text-[#2d3039]">
+                  <p>Gbazango</p>
                 </div>
                 <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
                   <p>Good service</p>

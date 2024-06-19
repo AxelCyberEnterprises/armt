@@ -12,7 +12,7 @@ export default function page() {
       <main className="live-arrival-container bg-white">
         <section className="mt-8 sm:mt-12">
           <div className='mb-6 sm:mb-12'>
-          <p className="inline text-center p-3 sm:p-4  bg-[#2D3039] text-white text-3xl sm:text-4xl">
+          <p className="inline text-center p-3 sm:p-4 hover:opacity-80 transition duration-500 ease-in-out bg-[#2D3039] text-white text-3xl sm:text-4xl">
             Stations & Bus stops
           </p>
           </div>
@@ -29,103 +29,82 @@ export default function page() {
               </div>
             </div>
           </div>
-          <div className="mb-6 sm:mb-8 bg-[#EEEEEE] px-3 sm:px-4 py-6 sm:py-8 w-[85%] sm:w-[95%]">
+          <div className="mb-6 sm:mb-8 bg-[#EEEEEE] px-3 sm:px-4 py-6 sm:py-8 w-[85%] sm:w-[95%] hover:opacity-80 transition duration-500 ease-in-out hover:border-[1px] hover:border-b-[#149145]">
             <p className="text-[#149145] text-2xl font-semibold">
               Train stations
             </p>
           </div>
-          <div className="sm:w-[90%] flex gap-1.5 sm:gap-[0.5%] px-0 sm:px-4 pb-4 sm:pb-8 mb-10 sm:mb-12 sm:border-b-2  sm:border-[#9c9c9c] flex-wrap">
+          <div className="pb-4 sm:pb-10 sm:w-[95%] mb-10 sm:mb-12 sm:border-b-2  sm:border-[#aaaaaa]">
+          <div className="px-0 sm:px-[2.5%] sm:w-[100%] sm:mb-12 mb-8 flex gap-1.5 sm:gap-[0.5%] flex-wrap">
             <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
-              <div className="w-[5%] bg-[#149045]"></div>
-              <p className="p-2 text-base text-[2d3039]">Abuja Metro</p>
+              <div className="w-[5%] bg-[#7f7bf4]"></div>
+              <p className="p-2 text-base text-[2d3039]">Line 1</p>
             </div>
             <div className="w-full sm:w-[33%]  flex  border-2 border-[#EEEEEE]">
-              <div className="w-[5%] bg-[#894E24]"></div>
-              <p className="p-2 text-base text-[2d3039]">Wupa</p>
+              <div className="w-[5%] bg-[#ffce00]"></div>
+              <p className="p-2 text-base text-[2d3039]">Line 3</p>
             </div>
             <div className="w-full sm:w-[33%]  flex  border-2 border-[#EEEEEE]">
-              <div className="w-[5%] bg-[#E86A10]"></div>
-              <p className="p-2 text-base text-[2d3039]">Airport</p>
+              <div className="w-[5%] bg-[#101010]"></div>
+              <p className="p-2 text-base text-[2d3039]">Line 5</p>
             </div>
             <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
-              <div className="w-[5%] bg-[#DC241F]"></div>
-              <p className="p-2 text-base text-[2d3039]">Kagini</p>
+              <div className="w-[5%] bg-[#dc241f]"></div>
+              <p className="p-2 text-base text-[2d3039]">Line 2</p>
             </div>
             <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
-              <div className="w-[5%] bg-[#000000]"></div>
-              <p className="p-2 text-base text-[2d3039]">Stadium Station</p>
-            </div>
-            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
-              <div className="w-[5%] bg-[#5A5EB7]"></div>
-              <p className="p-2 text-base text-[2d3039]">Idu</p>
-            </div>
-            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
-              <div className="w-[5%] bg-[#66CC00]"></div>
-              <p className="p-2 text-base text-[2d3039]">GwaGwa</p>
-            </div>
-            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
-              <div className="w-[5%] bg-[#BF6225]"></div>
-              <p className="p-2 text-base text-[2d3039]">Gbazango</p>
-            </div>
-            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
-              <div className="w-[5%] bg-[#92D9F7]"></div>
-              <p className="p-2 text-base text-[2d3039]">Kukwaba I</p>
-            </div>
-            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
-              <div className="w-[5%] bg-[#FFFAEC]"></div>
-              <p className="p-2 text-base text-[2d3039]">Kukwaba II</p>
-            </div>
-            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
-              <div className="w-[5%] bg-[#751056]"></div>
-              <p className="p-2 text-base text-[2d3039]">Bassanjiwa</p>
-            </div>
-            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
-              <div className="w-[5%] bg-[#FFCE00]"></div>
-              <p className="p-2 text-base text-[2d3039]">DeiDei</p>
-            </div>
-            {/* <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
-              <div className="w-[5%] bg-[#5a5eb7]"></div>
-              <p className="p-2 text-base text-[2d3039]">Maitama</p>
+              <div className="w-[5%] bg-[#e86a10]"></div>
+              <p className="p-2 text-base text-[2d3039]">Line 4</p>
             </div>
             <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
               <div className="w-[5%] bg-[#92d9f7]"></div>
-              <p className="p-2 text-base text-[2d3039]">Wuse</p>
-            </div> */}
+              <p className="p-2 text-base text-[2d3039]">Line 6</p>
+            </div>
           </div>
-          <div className="mb-6 sm:mb-8 bg-[#EEEEEE] px-3 sm:px-4 py-6 sm:py-8 w-[85%] sm:w-[95%]">
+          <div className="px-0 sm:px-[2.5%] sm:w-[100%] flex gap-1.5 sm:gap-[0.5%] flex-wrap">
+            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
+              <p className="p-2 text-base text-[2d3039]">Abuja Metro</p>
+            </div>
+            <div className="w-full sm:w-[33%]  flex  border-2 border-[#EEEEEE]">
+              <p className="p-2 text-base text-[2d3039]">Stadium Staion</p>
+            </div>
+            <div className="w-full sm:w-[33%]  flex  border-2 border-[#EEEEEE]">
+              <p className="p-2 text-base text-[2d3039]">Kukwaba I</p>
+            </div>
+            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
+              <p className="p-2 text-base text-[2d3039]">Wupa</p>
+            </div>
+            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
+              <p className="p-2 text-base text-[2d3039]">Idu</p>
+            </div>
+            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
+              <p className="p-2 text-base text-[2d3039]">Kukwaba II</p>
+            </div>
+            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
+              <p className="p-2 text-base text-[2d3039]">GwaGwa</p>
+            </div>
+            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
+              <p className="p-2 text-base text-[2d3039]">Gbazango</p>
+            </div>
+            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
+              <p className="p-2 text-base text-[2d3039]">Kukwaba I</p>
+            </div>
+            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
+              <p className="p-2 text-base text-[2d3039]">Kukwaba II</p>
+            </div>
+            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
+              <p className="p-2 text-base text-[2d3039]">Bassanjiwa</p>
+            </div>
+            <div className="w-full sm:w-[33%] flex  border-2 border-[#EEEEEE]">
+              <p className="p-2 text-base text-[2d3039]">DeiDei</p>
+            </div>
+          </div>
+          </div>
+          <div className="mb-6 sm:mb-8 bg-[#EEEEEE] px-3 sm:px-4 py-6 sm:py-8 w-[85%] sm:w-[95%] hover:opacity-80 transition duration-500 ease-in-out hover:border-[1px] hover:border-b-[#149145]">
             <p className="text-[#149145] text-2xl font-semibold">Buses</p>
           </div>
-          <div className="sm:w-[90%] flex px-3 sm:px-4 pb-4 sm:pb-8 mb-16 sm:mb-20 sm:border-b-2  border-[#9c9c9c] flex-wrap">
-            <p className="w-full sm:w-1/5 py-2 px-4 border-2 border-[#EEEEEE] text-base text-[2d3039]">
-              1-50
-            </p>
-            <p className="w-full sm:w-1/5 py-2 px-4 border-2 border-[#EEEEEE] text-base text-[2d3039]">
-              51-100
-            </p>
-            <p className="w-full sm:w-1/5 py-2 px-4 border-2 border-[#EEEEEE] text-base text-[2d3039]">
-              101-150
-            </p>
-            <p className="w-full sm:w-1/5 py-2 px-4 border-2 border-[#EEEEEE] text-base text-[2d3039]">
-              151-200
-            </p>
-            <p className="w-full sm:w-1/5 py-2 px-4 border-2 border-[#EEEEEE] text-base text-[2d3039]">
-              201-250
-            </p>
-            <p className="w-full sm:w-1/5 py-2 px-4 border-2 border-[#EEEEEE] text-base text-[2d3039]">
-              251-300
-            </p>
-            <p className="w-full sm:w-1/5 py-2 px-4 border-2 border-[#EEEEEE] text-base text-[2d3039]">
-              351-400
-            </p>
-            <p className="w-full sm:w-1/5 py-2 px-4 border-2 border-[#EEEEEE] text-base text-[2d3039]">
-              401-450
-            </p>
-            <p className="w-full sm:w-1/5 py-2 px-4 border-2 border-[#EEEEEE] text-base text-[2d3039]">
-              451-500
-            </p>
-            <p className="w-full sm:w-1/5 py-2 px-4 border-2 border-[#EEEEEE] text-base text-[2d3039]">
-              501-550
-            </p>
+          <div className="min-h-[200px] justify-center items-center sm:w-[90%] flex px-3 sm:px-4 pb-4 sm:pb-8 mb-16 sm:mb-20 sm:border-b-2  border-[#aaaaaa] flex-wrap">
+            <p className="font-bold text-lg sm:text-2xl text-[#121212]">Coming soon!</p>
           </div>
         </section>
       </main>
