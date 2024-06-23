@@ -8,20 +8,22 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import Image1 from "../../public/IMG-20240511-WA0013.jpg";
-import Image2 from "../../public/IMG-20240511-WA0014.jpg";
-import Image3 from "../../public/IMG-20240511-WA0015.jpg";
-import Image4 from "../../public/IMG-20240511-WA0016.jpg";
-import Image5 from "../../public/IMG-20240511-WA0017.jpg";
-import Image6 from "../../public/IMG-20240511-WA0018.jpg";
-import Image7 from "../../public/IMG-20240511-WA0019.jpg";
-import Image8 from "../../public/IMG-20240511-WA0020.jpg";
-import Image9 from "../../public/IMG-20240511-WA0021.jpg";
-import Image10 from "../../public/IMG-20240511-WA0022.jpg";
-import Image11 from "../../public/IMG-20240511-WA0023.jpg";
-import Image12 from "../../public/IMG-20240511-WA0024.jpg";
-import Image13 from "../../public/IMG-20240511-WA0025.jpg";
-import Image14 from "../../public/IMG-20240511-WA0026.jpg";
+import Image1 from "../../public/images/image1.jpeg"
+import Image2 from "../../public/images/image2.jpeg";
+import Image3 from "../../public/images/image3.jpeg";
+import Image4 from "../../public/images/image4.jpeg";
+import Image5 from "../../public/images/image5.jpeg";
+import Image6 from "../../public/images/image6.jpeg";
+import Image7 from "../../public/images/image7.jpeg";
+import Image8 from "../../public/images/image8.jpeg";
+import Image9 from "../../public/images/image9.jpeg";
+import Image10 from "../../public/images/image10.jpeg";
+import Image11 from "../../public/images/image11.jpeg";
+import Image12 from "../../public/images/image12.jpeg";
+import Image13 from "../../public/images/image13.jpeg";
+import Image14 from "../../public/images/image14.jpeg";
+import Image15 from "../../public/images/image15.jpeg";
+
 
 // import required modules
 import { Pagination, Navigation, EffectFade } from "swiper/modules";
@@ -78,6 +80,9 @@ export default function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
           <Image src={Image14} alt="slide 14" className="h-[100%]" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Image15} alt="slide 14" className="h-[100%]" />
         </SwiperSlide>
       </Swiper>
     </>
