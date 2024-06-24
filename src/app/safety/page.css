@@ -40,7 +40,7 @@
   width: 100%;
   display: flex;
   background: url("/safety-hero.png");
-  background-size: cover; /* Adjusts the size of the image to cover the entire container */
+  background-size: cover; 
   background-position: center;
   cursor: pointer;
   background-repeat: no-repeat;
