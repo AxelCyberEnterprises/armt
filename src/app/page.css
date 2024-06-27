@@ -228,8 +228,9 @@
 .color-block_right {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 13px;
+  justify-content: space-between;
+  /* gap: 13px; */
+  padding: 0px 20px;
   margin-inline: auto;
   width: 200px;
   font-family: "DM Sans", sans-serif;

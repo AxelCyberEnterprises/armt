@@ -140,7 +140,7 @@ function page() {
                 <p>Line 2</p>
               </div>
               <div className="color-block_right">
-                <p>Good Service</p>
+                <p>Inactive</p>
                 <img src="/arrow.png" alt="" width={20} height={20} />
               </div>
             </div>
@@ -158,7 +158,7 @@ function page() {
                 <p>Line 4</p>
               </div>
               <div className="color-block_right">
-                <p>Good Service</p>
+                <p>Inactive</p>
                 <img src="/arrow.png" alt="" width={20} height={20} />
               </div>
             </div>
@@ -167,7 +167,7 @@ function page() {
                 <p>Line 5</p>
               </div>
               <div className="color-block_right">
-                <p>Good Service</p>
+                <p>Inactive</p>
                 <img src="/arrow.png" alt="" width={20} height={20} />
               </div>
             </div>
@@ -176,7 +176,7 @@ function page() {
                 <p>Line 6</p>
               </div>
               <div className="color-block_right">
-                <p>Good Service</p>
+                <p>Inactive</p>
                 <img src="/arrow.png" alt="" width={20} height={20} />
               </div>
             </div>

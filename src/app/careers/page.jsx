@@ -8,66 +8,66 @@ import "./page.css"
 function page(props) {
 
 
-  const data = [
+  const jobs = [
     {
       id: 1,
-      jobDescription: "Train Conductor",
+      jobDescription: "Civil Engineer",
       jobDuration: "Full time",
-      location: "Abuja Metro"
+      location: "Abuja Metro Station"
     },
     {
       id: 2,
-      jobDescription: "Station Superintendent",
+      jobDescription: "Line Controller",
       jobDuration: "Full time",
-      location: "Gwagwa"
+      location: "Gwagwa Station"
     },
     {
       id: 3,
       jobDescription: "Train Driver",
       jobDuration: "Full time",
-      location: "Bassanjiwa"
+      location: "Bassanjiwa Station"
     },
     {
       id: 4,
-      jobDescription: "Dispatcher",
+      jobDescription: "Station Operations Maintenance Engineer",
       jobDuration: "Full time",
-      location: "Airport"
+      location: "Airport Station"
     },
     {
       id: 5,
-      jobDescription: "Freight Conductor",
+      jobDescription: "Track Vehicle Operators",
       jobDuration: "Part-time",
-      location: "GwaGwa"
+      location: "Gwagwa Station"
     },
     {
       id: 6,
-      jobDescription: "Ticket Controller",
+      jobDescription: "Station Control Room Attendant",
       jobDuration: "Full time",
-      location: "Idu"
+      location: "Idu Station"
     },
     {
       id: 7,
-      jobDescription: "Porter",
+      jobDescription: "Telephone Customer Service",
       jobDuration: "Full time",
-      location: "Idu"
+      location: "Idu Station"
     },
     {
       id: 8,
-      jobDescription: "Station Superintendent",
+      jobDescription: "Track Engineer",
       jobDuration: "Full time",
-      location: "Idu"
+      location: "Idu Station"
     },
     {
       id: 9,
-      jobDescription: "General Station Superintendent",
+      jobDescription: "Duty Station Manager",
       jobDuration: "Full time",
-      location: "All station"
+      location: "Airport Station"
     },
     {
       id: 10,
-      jobDescription: "Mechanical Engineerr",
+      jobDescription: "Mechanical Engineer",
       jobDuration: "Full time",
-      location: "Gwagwa"
+      location: "Gwagwa Station"
     },
   ];
 
@@ -95,13 +95,8 @@ function page(props) {
       <div className="careers__container-section3">
         <p>Open position</p>
         <div className="careers__container-section3_list">
-          {data.map((data) => (
-            <Position
-              key={data.id} 
-              jobDescription={data.jobDescription} 
-              jobDuration={data.jobDuration} 
-              location={data.location} 
-            />
+          {jobs.map((job) => (
+            <Position job={job} key={job.id}/>
           ))}
         </div>
       

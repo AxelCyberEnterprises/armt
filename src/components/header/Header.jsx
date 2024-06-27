@@ -94,6 +94,9 @@ function Header({ activeLink }) {
       </div>
 
       <div className={toggle2 ? "header-more" : "none"}>
+        <Link className="more-link" href="/history">
+          History
+        </Link>
         <Link className="more-link" href="/careers">
           Careers
         </Link>
