@@ -20,7 +20,6 @@
 .header__container > img {
   align-items: center;
   display: flex;
-  /* flex-grow: 1; */
 }
 .header__container-links {
   display: flex;
@@ -78,7 +77,6 @@
   align-items: center;
   margin: 20px 0;
   gap: 10px;
-  /* width: 152px; */
 }
 .header__container-search > img {
   margin-left: 16px;

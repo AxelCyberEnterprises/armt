@@ -6,17 +6,29 @@ import { useParams, useRouter } from 'next/navigation'
 import Header from '@/components/header/Header'
 import Bullet from '@/components/Bullet/Bullet'
 import Footer from '@/components/Footer/Footer'
+import Modal from '@/components/Modal/Modal'
  
 export default function Page() {
   const router = useRouter()
   const {id } = useParams();
   const [newIdData, setNewIdData] = useState()
+  const [modal, setModal] = useState(false)
 
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+  
+  
   useEffect(() => {
     const newIdData = idData.filter((item) => item.id == id);
     setNewIdData(newIdData);
   }, [id, idData]);
-
+  
+  if(modal) {
+    document.body.classList.add('active-modal')
+  } else {
+    document.body.classList.remove('active-modal')
+  }
   console.log(idData)
   console.log(newIdData)
   return (
@@ -39,8 +51,11 @@ export default function Page() {
             <h3>Abuja Metro Station</h3>
           </div>
           <div className="job__container-body_section2-button">
-            <button>Apply Now</button>
+            <button onClick={toggleModal}>Apply Now</button>
           </div>
+        </div>
+        <div>
+          {modal && <Modal toggleModal={toggleModal} />}
         </div>
         <div className="job__container-body_section3">
           <h1>Overview</h1>
