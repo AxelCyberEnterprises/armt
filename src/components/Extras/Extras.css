@@ -4,6 +4,7 @@
   background: rgba(238, 238, 238, 1);
   border-bottom: 2px solid rgba(195, 195, 195, 1);
   align-items: center;
+  cursor: pointer;
 }
 .extras__container:hover {
   opacity: 0.7;
