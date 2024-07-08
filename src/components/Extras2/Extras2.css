@@ -4,6 +4,11 @@
   background: rgba(238, 238, 238, 1);
   border-bottom: 2px solid rgba(195, 195, 195, 1);
   align-items: center;
+  cursor: pointer;
+}
+.extras2__container:hover {
+  opacity: 0.7;
+  border-bottom: 2px solid rgba(20, 145, 69, 1);
 }
 .extras2__container-left {
   display: flex;
@@ -29,7 +34,10 @@
   text-align: left;
   color: rgba(18, 18, 18, 0.7);
   max-width: 500px;
-  width: 70%;
+  width: 90%;
+}
+.extras2__container-right {
+  padding-right: 12px;
 }
 @media screen and (max-width: 450px) {
   .extras2__container {

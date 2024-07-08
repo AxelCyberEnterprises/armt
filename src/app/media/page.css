@@ -1,0 +1,193 @@
+.media__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.media__container-header {
+  display: flex;
+  width: 100%;
+}
+.media__container-body {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-inline: auto;
+}
+.media__container-body_section1 {
+  margin-top: 30px;
+  max-width: 170px;
+  display: flex;
+  background: rgba(45, 48, 57, 1);
+  font-family: 'DM Sans', sans-serif;
+  padding: 12px 20px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 58.59px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.media__container-body_section2 {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  gap: 35px;
+  align-items: flex-start;
+}
+.media__container-body_section2-left {
+  display:flex;
+  max-width: 880px;
+  width: 60%;
+  flex-direction: column;
+  gap: 35px;
+}
+.media__container-body_section2-topic {
+  width: 100%;
+  background: rgba(238, 238, 238, 1);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.media__container-body_section2-topic > h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26.04px;
+  text-align: left;
+  color: rgba(45, 48, 57, 1);
+}
+.media__container-body_section2-topic > p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  text-align: left;
+  color: rgba(45, 48, 57, 1);
+}
+.media__container-column_container {
+  display: flex;
+  width: 100%;
+  gap: 35px;
+}
+.media__container-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 25px;
+}
+.media__container-body_section2-right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width:400px;
+  width: 35%;
+}
+.media__container-right_section1 {
+  width: 100%;
+  background: rgba(106, 114, 120, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: 'DM Sans', sans-serif;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.83px;
+  text-align: left;
+
+}
+.media__container-right_section2 {
+  background: rgba(238, 238, 238, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+.media__container-span {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.media__container-span > span {
+  max-width: 350px;
+  background: white;
+  border: 1px solid black;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  text-align: left;
+  color: rgba(45, 48, 57, 1);
+  padding: 10px 15px;
+}
+.media__container-right_section3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+  background: rgba(238, 238, 238, 1);
+  padding: 25px;
+}
+.media__container-right_section3-contact {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.media__container-right_section3-contact > h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26.04px;
+  text-align: left;
+  color: rgba(45, 48, 57, 1);
+}
+.media__container-right_section3-contact > p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+  color: rgba(45, 48, 57, 1);
+}
+.media__container-right_section3-call {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.media__container-right_section3-call > h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+  text-align: left;
+  color :rgba(45, 48, 57, 1);
+}
+.media__container-right_section3-call > p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+  color: rgba(45, 48, 57, 1);
+}
+.green-link {
+  color: rgba(20, 145, 69, 1);
+  text-decoration: underline;
+}
+.media__container-footer {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+}
+@media screen and (max-width: 850px) {
+  .media__container-body_section2 {
+    flex-wrap: wrap; 
+  }
+  .media__container-body_section2-left,
+  .media__container-body_section2-right  {
+    width: 100%; 
+  }
+
+}
+@media screen and (max-width: 550px) {
+  .media__container-column_container {
+    flex-wrap: wrap;
+  }
+
+}
