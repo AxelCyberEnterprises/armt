@@ -1,12 +1,25 @@
+"use client"
+
 import Bullet from '@/components/Bullet/Bullet'
+import { motion, useScroll, useSpring } from "framer-motion";
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/header/Header'
 import React from 'react'
 import "./page.css"
 
 function page() {
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   return (
     <div className="terms__container">
+       <motion.div className="progress-bar" style={{ scaleX }} />
+
       <div className="terms__container-header">
         <Header activeLink={"/terms-of-use"} />
       </div>
