@@ -100,6 +100,15 @@
 .terms___container-footer {
   margin-top: 100px;
 }
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: rgba(20, 144, 69, 1);
+  transform-origin: 0%;
+}
 @media screen and (max-width: 1024px) {
   .terms__container-topic {
     margin-left: 60px;
