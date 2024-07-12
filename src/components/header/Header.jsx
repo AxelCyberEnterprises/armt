@@ -5,7 +5,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 import ActiveLink from "../ActiveLink";
 import Link from "next/link";
-import { motion } from "framer-motion"
 
 function Header({ activeLink }) {
   const [toggle, setToggle] = useState(false);
@@ -24,26 +23,12 @@ function Header({ activeLink }) {
     <div className="top-nav">
       <div className="header__container">
         <Link href={"/"}>
-          {/* <img
-            className=""
+          <img
             src="/logo.png"
             alt="Description of the image"
             width={75}
             height={30}
-          /> */}
-          <motion.div
-            className="container"
-            whileHover={{ scale: 1.2, rotate: 360 }}
-            whileTap={{ scale: 0.8, rotate: -360, borderRadius: "100%" }}
-          >
-            <img
-              className=""
-              src="/logo.png"
-              alt="Description of the image"
-              width={75}
-              height={30}
-            />
-          </motion.div>
+          />
         </Link>
         <div className="header__container-links">
           <ActiveLink
@@ -82,6 +67,14 @@ function Header({ activeLink }) {
             Status updates
           </ActiveLink>
 
+          <ActiveLink
+            href={"/fares"}
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          >
+            Fares
+          </ActiveLink>
+
           {/* <ActiveLink
             href={"/help-and-contact"}
             activeTab={activeTab}
@@ -109,6 +102,9 @@ function Header({ activeLink }) {
       </div>
 
       <div className={toggle2 ? "header-more" : "none"}>
+        <Link className="more-link" href="/schedules">
+          Schedules
+        </Link>
         <Link className="more-link" href="/history">
           History
         </Link>

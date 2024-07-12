@@ -7,7 +7,7 @@ export default function page() {
   return (
     <>
       <div>
-        <Header activeLink={"/help-and-contact"}/>
+        <Header activeLink={"/help-and-contact"} />
       </div>
       <main className="help-and-contact-container ">
         <div className="mt-8 sm:mt-12 mb-6 sm:mb-12 ">

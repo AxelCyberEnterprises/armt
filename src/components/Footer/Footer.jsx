@@ -33,7 +33,13 @@ function Footer() {
       <div className="footer__container-column">
         <h2>Information</h2>
         <div className="footer__container-column_links">
-          <p>Business & Advertisement</p>
+          <Link
+            href={"/business&advertising"}
+            className="footer__container-links"
+          >
+            Business & Advertisement
+          </Link>
+
           <p>Media</p>
           <p>Tax & Private hire</p>
         </div>
