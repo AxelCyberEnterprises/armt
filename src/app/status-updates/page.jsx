@@ -4,10 +4,16 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/header/Header";
 import React, { useState, useEffect } from "react";
 import { FaAngleRight } from "react-icons/fa6";
+import Station from "./components/Station";
+import Lines from "./components/Lines";
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 
 export default function Page() {
   const [currentTime, setCurrentTime] = useState(new Date());
-
+  const [count,setCount] = useState(0)
+  const [value, onChange] = useState(new Date());
+  const [appear,setAppear] = useState(false)
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTime(new Date());
@@ -56,118 +62,123 @@ export default function Page() {
             </p>
             <p className="hover:border-b-[2px] hover:border-[#149145] transition duration-500 ease-in-out relative flex-1 py-4 flex justify-center items-center text-sm sm:text-base text-[#2d3039]">
               Future date
-              <FaCalendar  className="absolute text-[#149145] right-4 top-[50%] -translate-y-[50%]"/>
+              <FaCalendar  
+              onClick={()=>{setAppear(!appear)}}
+              className="absolute cursor-pointer text-[#149145] right-4 top-[50%] -translate-y-[50%]"/>
             </p>
           </div>
         </div>
-        <div className="mt-4 mb-6">
+        <div className="mt-4 mb-6 relative">
           <div className="flex gap-1">
-            <p className="p-2 bg-[#2d3039] text-white ">Lines</p>
-            <p className="p-2 bg-[#149145] text-white">Stations</p>
+            <p 
+              className="p-2 bg-[#2d3039] text-white cursor-pointer"
+              onClick={()=>setCount(1)}
+            >
+              Lines
+            </p>
+            <p 
+              className="p-2 bg-[#149145] text-white cursor-pointer"
+              onClick={()=>setCount(0)}
+            >
+              Stations
+            </p>
           </div>
+          {
+            appear
+            &&
+            <Calendar onChange={onChange} value={value} className="absolute top-0 right-0 rounded-2xl" />
+          }
         </div>
         <div className="flex flex-col sm:flex-row gap-[25px] sm:gap-[75px] mb-12">
           <div className="sm:flex-[2]">
-            <div className="border-[1px] border-[#eeeeee]">
-              <div className="flex">
-                <div className="flex-1 bg-[#fffff] p-4 text-base text-[#2d3039]">
-                  <p>Abuja Metro</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base flex justify-between items-center bg-[#faf5e1]">
-                  <p className="text-[#149145]">Minor delays</p>
-                  <FaAngleRight style={{ color: "#149145" }} />
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-1 bg-[#eeeeee] p-4 text-base text-[#2d3039]">
-                  <p>Stadium station</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base flex justify-between items-center bg-[#faf5e1]">
-                  <p className="text-[#149145]">Severe delays</p>
-                  <FaAngleRight style={{ color: "#149145" }} />
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-1 bg-[#ffffff] p-4 text-base text-[#2d3039]">
-                  <p>Kukwaba I</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
-                  <p>Good service</p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-1 bg-[#eeeeee] p-4 text-base text-[#2d3039]">
-                  <p>Kukwaba II</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
-                  <p>Good service</p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-1 bg-[#ffffff] p-4 text-base text-[#2d3039]">
-                  <p>Wupa</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
-                  <p>Good service</p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-1 bg-[#eeeeee] p-4 text-base text-[#2d3039]">
-                  <p>Idu</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
-                  <p>Good service</p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-1 bg-[#ffffff] p-4 text-base text-[#2d3039]">
-                  <p>Bassanjiwa</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
-                  <p>Good service</p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-1 bg-[#eeeeee] p-4 text-base text-[#2d3039]">
-                  <p>Airport</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
-                  <p>Good service</p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-1 bg-[#ffffff] p-4 text-base text-[#2d3039]">
-                  <p>GwaGwa</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
-                  <p>Good service</p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-1 bg-[#ffffff] p-4 text-base text-[#2d3039]">
-                  <p>DeiDei</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
-                  <p>Good service</p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-1 bg-[#ffffff] p-4 text-base text-[#2d3039]">
-                  <p>Kagini</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
-                  <p>Good service</p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-1 bg-[#eeeeee] p-4 text-base text-[#2d3039]">
-                  <p>Gbazango</p>
-                </div>
-                <div className="flex-1 border-b-[1px] border-[#eeeeee] p-4 text-base text-[#2d3039] flex justify-between items-center bg-white">
-                  <p>Good service</p>
-                </div>
-              </div>
+            {
+              count == 0 
+              ?
+              <div className="border-[1px] border-[#eeeeee]">
+              <Station
+                name={"Abuja Metro"}
+                status={"information"}
+              />
+              <Station 
+                name={"Stadium station"}
+                status={"Information"}
+              />
+              <Station
+                name={"Kukwaba I"}
+                status={"Information"}
+              />
+              <Station
+                name={"Kukwaba II"}
+                status={"Closure"} 
+              />
+              <Station
+                name={"Wupa"}
+                status={"Information"}
+              />
+              <Station
+                name={"Idu"}
+                status={"Information"}
+              />
+              <Station
+                name={"Bassanjiwa"}
+                status={"Information"}
+              />
+              <Station
+                name={"Airport"}
+                status={"Information"}
+              />
+              <Station
+                name={"GwaGwa"}
+                status={"Information"}
+              />
+              <Station
+                name={"DeiDei"}
+                status={"Closure"}
+              />
+              <Station
+                name={"Kagini"}
+                status={"Information"}
+              />
+              <Station
+                name={"Gbazango"}
+                status={"Information"}
+              />
             </div>
+              : (
+                <div className="border-[1px] border-[#eeeeee]">
+                  <Lines
+                    bg={"#7f7bf4"}
+                    name={"Line 1"}
+                    status={"Good service"}
+                  />
+                  <Lines
+                    bg={"#dc241f"}
+                    name={"Line 2"}
+                    status={"Part suspended"}
+                  />
+                  <Lines
+                    bg={"#ffce00"}
+                    name={"Line 3"}
+                    status={"Good service"}
+                  />
+                  <Lines
+                    bg={"#e86a10"}
+                    name={"Line 4"}
+                    status={"Part suspended"}
+                  />
+                  <Lines
+                    bg={"#101010"}
+                    name={"Line 5"}
+                    status={"Minor delays"}
+                  />
+                  <Lines
+                    bg={"#92d9f7"}
+                    name={"Lot 6"}
+                    status={"Minor delays"}
+                  />
+                </div>
+              )
+            } 
             <div className="mt-4 mb-6 border-2 border-[#eeeee] p-2 flex justify-between items-center">
               <p className="text-base text-[#9797a8]">Major works & Events</p>
               <FaAngleRight style={{ color: "#149145" }} />
